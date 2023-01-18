@@ -56,3 +56,34 @@
 2023-01-18T16:41:59.489+03:00  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2023-01-18T16:41:59.495+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : Started Application in 0.395 seconds (process running for 556.02)
 2023-01-18T16:41:59.497+03:00  INFO 7852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-01-18T16:48:53.452+03:00  INFO 7852 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-01-18T16:48:53.460+03:00  INFO 7852 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-18T16:48:53.463+03:00  INFO 7852 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-18T16:48:53.671+03:00  WARN 7852 --- [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-01-18T16:48:53.671+03:00  INFO 7852 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-01-18T16:48:53.672+03:00  INFO 7852 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-01-18T16:48:53.717+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : Starting Application using Java 18.0.2 with PID 7852 (D:\my-projects\SpringBoot\target\classes started by bilal.kose in D:\my-projects\SpringBoot)
+2023-01-18T16:48:53.718+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T16:48:53.841+03:00  INFO 7852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-18T16:48:53.842+03:00  INFO 7852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-01-18T16:48:53.891+03:00  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-18T16:48:53.891+03:00  INFO 7852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-18T16:48:53.892+03:00  INFO 7852 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-18T16:48:53.902+03:00  INFO 7852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-18T16:48:53.903+03:00  INFO 7852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2023-01-18T16:48:53.917+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-01-18T16:48:53.937+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:file:./memory_persist/denemedb user=ROOT
+2023-01-18T16:48:53.937+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-01-18T16:48:53.937+03:00  INFO 7852 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2023-01-18T16:48:53.955+03:00  INFO 7852 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-18T16:48:53.956+03:00  WARN 7852 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-18T16:48:53.958+03:00  INFO 7852 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-18T16:48:53.963+03:00  INFO 7852 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-18T16:48:53.963+03:00  INFO 7852 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-18T16:48:53.974+03:00  WARN 7852 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-18T16:48:54.008+03:00  WARN 7852 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-01-18T16:48:54.052+03:00  INFO 7852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-18T16:48:54.054+03:00  INFO 7852 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-01-18T16:48:54.069+03:00  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-18T16:48:54.075+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : Started Application in 0.375 seconds (process running for 970.6)
+2023-01-18T16:48:54.076+03:00  INFO 7852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
