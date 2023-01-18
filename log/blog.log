@@ -1,0 +1,58 @@
+2023-01-18T16:32:44.132+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : Starting Application using Java 18.0.2 with PID 7852 (D:\my-projects\SpringBoot\target\classes started by bilal.kose in D:\my-projects\SpringBoot)
+2023-01-18T16:32:44.134+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T16:32:44.161+03:00  INFO 7852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-01-18T16:32:44.161+03:00  INFO 7852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-01-18T16:32:44.632+03:00  INFO 7852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-18T16:32:44.644+03:00  INFO 7852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-01-18T16:32:44.963+03:00  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-18T16:32:44.969+03:00  INFO 7852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-18T16:32:44.969+03:00  INFO 7852 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-18T16:32:45.003+03:00  INFO 7852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-18T16:32:45.004+03:00  INFO 7852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 841 ms
+2023-01-18T16:32:45.052+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-18T16:32:45.159+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a071b586-e0ff-4764-adab-c2de660231b4 user=SA
+2023-01-18T16:32:45.161+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-18T16:32:45.167+03:00  INFO 7852 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:a071b586-e0ff-4764-adab-c2de660231b4'
+2023-01-18T16:32:45.264+03:00  INFO 7852 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-18T16:32:45.290+03:00  INFO 7852 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-18T16:32:45.376+03:00  WARN 7852 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-18T16:32:45.450+03:00  INFO 7852 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-18T16:32:45.601+03:00  INFO 7852 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-18T16:32:45.607+03:00  INFO 7852 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-18T16:32:45.637+03:00  WARN 7852 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-18T16:32:45.785+03:00  WARN 7852 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-01-18T16:32:45.954+03:00  INFO 7852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-18T16:32:45.958+03:00  INFO 7852 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-01-18T16:32:46.006+03:00  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-18T16:32:46.016+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : Started Application in 2.134 seconds (process running for 2.541)
+2023-01-18T16:41:58.834+03:00  INFO 7852 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-01-18T16:41:58.843+03:00  INFO 7852 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-01-18T16:41:58.849+03:00  INFO 7852 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-18T16:41:59.068+03:00  WARN 7852 --- [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-01-18T16:41:59.069+03:00  INFO 7852 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-01-18T16:41:59.071+03:00  INFO 7852 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-01-18T16:41:59.114+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : Starting Application using Java 18.0.2 with PID 7852 (D:\my-projects\SpringBoot\target\classes started by bilal.kose in D:\my-projects\SpringBoot)
+2023-01-18T16:41:59.114+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : No active profile set, falling back to 1 default profile: "default"
+2023-01-18T16:41:59.244+03:00  INFO 7852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-18T16:41:59.245+03:00  INFO 7852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-01-18T16:41:59.299+03:00  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-01-18T16:41:59.299+03:00  INFO 7852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-18T16:41:59.300+03:00  INFO 7852 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-18T16:41:59.312+03:00  INFO 7852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-18T16:41:59.312+03:00  INFO 7852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 197 ms
+2023-01-18T16:41:59.328+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-01-18T16:41:59.330+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:2e363fab-1f59-49bd-aa4e-cc9bcaa490d9 user=SA
+2023-01-18T16:41:59.330+03:00  INFO 7852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-01-18T16:41:59.330+03:00  INFO 7852 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:2e363fab-1f59-49bd-aa4e-cc9bcaa490d9'
+2023-01-18T16:41:59.351+03:00  INFO 7852 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-18T16:41:59.353+03:00  WARN 7852 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-18T16:41:59.355+03:00  INFO 7852 --- [restartedMain] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-01-18T16:41:59.361+03:00  INFO 7852 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-18T16:41:59.361+03:00  INFO 7852 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-18T16:41:59.374+03:00  WARN 7852 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-18T16:41:59.416+03:00  WARN 7852 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2023-01-18T16:41:59.467+03:00  INFO 7852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-01-18T16:41:59.469+03:00  INFO 7852 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-01-18T16:41:59.489+03:00  INFO 7852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-01-18T16:41:59.495+03:00  INFO 7852 --- [restartedMain] com.bilalkose.Application                : Started Application in 0.395 seconds (process running for 556.02)
+2023-01-18T16:41:59.497+03:00  INFO 7852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
