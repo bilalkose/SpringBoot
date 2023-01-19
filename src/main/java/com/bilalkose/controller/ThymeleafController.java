@@ -4,6 +4,7 @@ import com.bilalkose.dto.ProductDto;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -11,17 +12,28 @@ import java.util.List;
 
 @Controller
 public class ThymeleafController {
+
+    //http://localhost:8080/
+    @GetMapping({"/","index"}) //root bileşeni. {} arasına alırsan opsiyonel seçenekleri belirleyebilirsin
+    public String index(){
+        return "index";
+    }
+
+    /////////////////////////////////////////////////////////////////////////
+
     //http://localhost:8080/thymeleaf1
-    @GetMapping("/thymeleaf1")
+//    @GetMapping("/thymeleaf1")
 //    @ResponseBody
 //    public String getThymeleaf1(){
 //        return "merhabalar";
 //    }
 
+    @GetMapping("/thymeleaf1")
     //@ResponseBody
     public String getThymeleaf1(){
         return "thymeleaf1"; //html ismiyle aynı
     }
+
 
 
     //Model
@@ -82,5 +94,20 @@ public class ThymeleafController {
         model.addAttribute("product_liste",listem); //nesne gönderiyorum
 
         return "thymeleaf6";
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+    //@PathVariable
+    //http://localhost:8080/thymeleaf7/4
+    @GetMapping({"/thymeleaf7/{id}", "/thymeleaf7"})
+    public String getThymeleaf7ModelObject(Model model, @PathVariable(name="id", required = false) Long id) { //pathvariable name ile mapping deki uri aynı olmalı. //mappingurl i opsiyonel hala getrirsen reqired ı false yap
+        if(id != null){
+            model.addAttribute("key_model1", "id: " + id);
+        }else{
+            model.addAttribute("key_model1", "id: bulunamadı");
+        }
+
+        return "thymeleaf7";
     }
 }
