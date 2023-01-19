@@ -111,7 +111,7 @@ public class ThymeleafController {
         return "thymeleaf7";
     }
 
-    //@PathVariable
+    //@RequestParam
     //http://localhost:8080/thymeleaf8?id=4&name=Bilal
     @GetMapping("/thymeleaf8")
     public String getThymeleaf8ModelObject(Model model,
