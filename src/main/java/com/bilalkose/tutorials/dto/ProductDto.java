@@ -1,4 +1,4 @@
-package com.bilalkose.dto;
+package com.bilalkose.tutorials.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

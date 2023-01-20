@@ -1,4 +1,4 @@
-package com.bilalkose.dto;
+package com.bilalkose.tutorials.dto;
 
 import java.util.Date;
 

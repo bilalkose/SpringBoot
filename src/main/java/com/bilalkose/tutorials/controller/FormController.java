@@ -1,6 +1,6 @@
-package com.bilalkose.controller;
+package com.bilalkose.tutorials.controller;
 
-import com.bilalkose.dto.TeacherDto;
+import com.bilalkose.tutorials.dto.TeacherDto;
 import jakarta.validation.Valid;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Controller;
