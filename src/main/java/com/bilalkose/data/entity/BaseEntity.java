@@ -1,4 +1,4 @@
-package com.bilalkose.entity;
+package com.bilalkose.data.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
