@@ -1,5 +1,6 @@
 package com.bilalkose.data.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,7 +16,10 @@ import java.util.Date;
 @MappedSuperclass //? - superclass olduğunu göstermek için
 @Getter
 @Setter
-@EntityListeners(AuditingEntityListener.class) //? - kim ne zaman neyi değiştirdi
+
+//Auditing
+@EntityListeners(AuditingEntityListener.class) // auditing -> kim ne zaman neyi değiştirdi. db'deki created date ve updated date alanlarını güncelliyor
+@JsonIgnoreProperties(value = {"created_date, update_date"},allowGetters = true)
 public class BaseEntity {
     //birden fazla ortak entity yapıları için baseEntity yapısı kullanırız
 
